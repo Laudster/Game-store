@@ -1,0 +1,30 @@
+GET http://localhost:5168/games
+
+###
+GET http://localhost:5168/games/3
+
+###
+POST http://localhost:5168/games
+Content-Type: application/json
+
+{
+    "name": "Hearts Of Iron 4",
+    "genreId": 3,
+    "price": 20.0,
+    "release": "2015-03-05"
+}
+
+###
+Put http://localhost:5168/games/3
+Content-Type: application/json
+
+  {
+    "id": 3,
+    "name": "Hearts Of Iron 4",
+    "genre": "Grand Strategy",
+    "price": 20.0,
+    "release": "2015-05-11"
+  }
+
+###
+DELETE http://localhost:5168/games/3
